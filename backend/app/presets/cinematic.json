@@ -1,0 +1,39 @@
+{
+  "name": "cinematic",
+  "display_name": "Cinematic / Контент",
+  "target_fps": 24,
+  "interpolation_engine": "none",
+  "color": {
+    "lut_name": "teal_orange",
+    "contrast": 1.08,
+    "saturation": 1.12
+  },
+  "crop": {
+    "enabled": true,
+    "aspect_ratio_options": [
+      "21:9",
+      "9:16",
+      "16:9"
+    ]
+  },
+  "transitions": {
+    "type": "crossfade",
+    "duration_ms": 300
+  },
+  "stabilization": {
+    "enabled": true,
+    "shakiness": 8,
+    "accuracy": 15,
+    "smoothing": 25
+  },
+  "audio": {
+    "reverb": true,
+    "compressor_ratio": 3.0,
+    "compressor_threshold_db": -20,
+    "target_lufs": -16
+  },
+  "letterbox": {
+    "enabled": true,
+    "bar_size_percent": 10
+  }
+}

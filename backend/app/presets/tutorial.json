@@ -1,0 +1,46 @@
+{
+  "name": "tutorial",
+  "display_name": "Tutorial / Обучение",
+  "target_fps": 60,
+  "interpolation_engine": "minterpolate",
+  "remove_fillers": true,
+  "background_blur": {
+    "enabled": true,
+    "face_scale_factor": 1.1,
+    "min_neighbors": 5,
+    "gaussian_kernel": 51
+  },
+  "active_area_zoom": {
+    "enabled": true,
+    "max_zoom": 1.2
+  },
+  "subtitles": {
+    "enabled": true,
+    "model": "small",
+    "format": "srt"
+  },
+  "cutting": {
+    "remove_silence": true,
+    "aggressiveness": 0.85
+  },
+  "audio_chain": {
+    "noise_gate_threshold_db": -40,
+    "highpass_hz": 80,
+    "presence_boost_db": 3,
+    "presence_band_hz": 3000,
+    "mud_cut_db": -2,
+    "mud_band_hz": 300,
+    "compressor_ratio": 4.0,
+    "compressor_threshold_db": -18,
+    "deesser_band_hz_low": 6000,
+    "deesser_band_hz_high": 8000,
+    "limiter_ceiling_db": -1,
+    "target_lufs": -14
+  },
+  "stabilization": {
+    "enabled": true,
+    "shakiness": 10,
+    "accuracy": 15,
+    "smoothing": 30
+  }
+}
