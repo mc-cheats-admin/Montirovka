@@ -1,0 +1,4 @@
+## 2026-03-06 - Simplified Docker Compose setup with frontend proxy for out-of-the-box deployment
+- Summary: Reconfigured default deployment to use same-origin frontend-to-backend proxying, eliminating need for manual CORS/URL configuration. Users can now run `docker compose up --build` and access the application immediately via frontend without additional setup.
+- Files changed: docker-compose.yml (removed CORS_ORIGINS override, aligned ports), .env.example (set NEXT_PUBLIC_API_BASE_URL to empty for proxy mode, fixed backend defaults), frontend/next.config.js (ensured /api rewrite is active by default), backend/app/core/config.py (corrected preset_dir default path to /app/presets), README.md (rewrote Quick Start for simplified Docker workflow, clarified online requirements for model downloads).
+- Functions/classes touched: Settings class in backend/app/core/config.py (preset_dir, upload_dir defaults).
